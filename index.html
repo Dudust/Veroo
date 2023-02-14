@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Veroo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/inicio.js" defer></script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-md bg-body bg-gradient px-4 text-center">
+      <a href="index.html" class="navbar-brand text-success"
+        ><img
+          src="/img/logo.png"
+          height="90"
+          class="d-inline-block align-text-center"
+          alt="Logotipo"
+        />
+        Veroo.</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto text-uppercase">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link text-secondary">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a href="tienda.html" class="nav-link text-secondary">Tienda</a>
+          </li>
+          <li class="nav-item">
+            <a href="aboutus.html" class="nav-link text-secondary"
+              >Sobre Nosotros</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="carrito.html" class="nav-link text-secondary">Carrito</a>
+          </li>
+          <li class="nav-item">
+            <div class="nav-item dropdown show">
+              <a
+                id="iniciosesion"
+                class="btn btn-outline-success mx-1 my-2 my-sm-0"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <i class="bi bi-person"></i>
+              </a>
+              <div
+                class="dropdown-menu dropdown-menu-end px-6 text-center "
+                id="login"
+              >
+                <div class="px-3 py-2 dropdown-item">
+                  <input
+                    type="text"
+                    id="usuario"
+                    class="form-control"
+                    placeholder="Usuario"
+                    required="required"
+                  />
+                </div>
+                <div class="px-3 py-2 dropdown-item">
+                  <input
+                    type="password"
+                    id="contrasena"
+                    class="form-control"
+                    placeholder="Contraseña"
+                    required="required"
+                  />
+                </div>
+                <input type="button" id="login_button" class="btn btn-success" value="Login" />
+                <div class="text-center mt-2 dropdown-item">
+                  <p id="registro" class="fs-6 text-lowercase">
+                    Registrate Aquí
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div id="slider" class="bg-slider text-white">
+      <div class="row">
+        <div class="col-sm-8">
+          <p class="fs-1 fw-semibold p-3 my-0">Veroo.</p>
+          <div class="col-sm-8">
+            <p class="fs-5 fw-semibold p-3">
+              Pretendemos acercar el mundo del jardín a los usuarios, ofreciendo
+              al mercado los mejores y más exclusivos productos para poder
+              entregarlos en tu domicilio en las mejores condiciones, ya sea
+              para su uso particular o profesional.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      id="carouselExampleDark"
+      class="carousel carousel-dark slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner" id="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="img/naranjo.jpg" alt="first slide" />
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="img/manzano.jpg" alt="second slide" />
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="img/melocoton.jpg" alt="" />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleDark"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleDark"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <hr />
+    <div id="content" class="text-center justify-content-center">
+      <p class="fs-1 fw-semibold p-3 my-0">Más Vendidos</p>
+      <div id="cards" class="row d-flex justify-content-around"></div>
+    </div>
+
+    <hr />
+    <div id="cookies"></div>
+    <footer id="footer" class="p-3 bg-success text-white rounded bg-gradient">
+      <div class="row text-white text-center">
+        <div class="col-12 col-sm-4 px-3">
+          <p class=""><b>© Veroo.</b></p>
+          <p class="text-justify">
+            Pretendemos acercar el mundo del jardín a los usuarios, ofreciendo
+            al mercado los mejores y más exclusivos productos para poder
+            entregarlos en tu domicilio en las mejores condiciones, ya sea para
+            su uso particular o profesional.
+          </p>
+        </div>
+        <div class="col-12 col-sm-4 px-3">
+          <p class=""><b>INFORMACION</b></p>
+          <div class=" ">
+            <a
+              href="aboutus.html"
+              class="text-white d-flex align-items-start justify-content-center"
+              >Aviso Legal</a
+            >
+            <br />
+            <a
+              href="licencias.txt"
+              class="text-white d-flex align-items-center justify-content-center"
+              >Licencias</a
+            >
+            <br />
+            <a
+              href="aboutus.html"
+              class="text-white d-flex align-items-end justify-content-center"
+              >Sobre Nosotros</a
+            >
+          </div>
+        </div>
+        <div class="col-12 col-sm-4 px-3 text-start">
+          <p class="text-center"><b>CONTACTO</b></p>
+          <p class="d-flex align-items-start">
+            <i class="bi bi-geo-alt-fill px-1"></i>C. Río Perales, 9, 28690
+            Brunete, Madrid
+          </p>
+          <p class="d-flex align-items-center">
+            <i class="bi bi-envelope-at px-1"></i>veroo_info@veroo.es
+          </p>
+          <p class="d-flex align-items-end">
+            <i class="bi bi-telephone px-1"></i>+34 618 608 658
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
